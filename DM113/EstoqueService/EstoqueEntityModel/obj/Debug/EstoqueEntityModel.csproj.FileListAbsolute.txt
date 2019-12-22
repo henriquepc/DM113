@@ -1,0 +1,14 @@
+C:\Users\Henrique\source\repos\EstoqueService\EstoqueEntityModel\bin\Debug\EstoqueEntityModel.dll.config
+C:\Users\Henrique\source\repos\EstoqueService\EstoqueEntityModel\bin\Debug\EstoqueEntityModel.dll
+C:\Users\Henrique\source\repos\EstoqueService\EstoqueEntityModel\bin\Debug\EstoqueEntityModel.pdb
+C:\Users\Henrique\source\repos\EstoqueService\EstoqueEntityModel\bin\Debug\EntityFramework.dll
+C:\Users\Henrique\source\repos\EstoqueService\EstoqueEntityModel\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Henrique\source\repos\EstoqueService\EstoqueEntityModel\bin\Debug\EntityFramework.xml
+C:\Users\Henrique\source\repos\EstoqueService\EstoqueEntityModel\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Henrique\source\repos\EstoqueService\EstoqueEntityModel\obj\Debug\EstoqueEntityModel.csprojAssemblyReference.cache
+C:\Users\Henrique\source\repos\EstoqueService\EstoqueEntityModel\obj\Debug\EstoqueEntityModel.csproj.CoreCompileInputs.cache
+C:\Users\Henrique\source\repos\EstoqueService\EstoqueEntityModel\obj\Debug\EstoqueEntityModel.csproj.CopyComplete
+C:\Users\Henrique\source\repos\EstoqueService\EstoqueEntityModel\obj\Debug\EstoqueEntityModel.dll
+C:\Users\Henrique\source\repos\EstoqueService\EstoqueEntityModel\obj\Debug\EstoqueEntityModel.pdb
+C:\Users\Henrique\source\repos\EstoqueService\EstoqueEntityModel\obj\Debug\EstoqueEntityModel.Migrations.Criacao_do_Banco.resources
+C:\Users\Henrique\source\repos\EstoqueService\EstoqueEntityModel\obj\Debug\EstoqueEntityModel.csproj.GenerateResource.cache

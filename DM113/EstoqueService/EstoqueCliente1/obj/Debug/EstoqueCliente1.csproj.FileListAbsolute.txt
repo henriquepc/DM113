@@ -1,0 +1,12 @@
+C:\Users\Henrique\source\repos\EstoqueService\EstoqueCliente1\bin\Debug\EstoqueCliente1.exe.config
+C:\Users\Henrique\source\repos\EstoqueService\EstoqueCliente1\bin\Debug\EstoqueCliente1.exe
+C:\Users\Henrique\source\repos\EstoqueService\EstoqueCliente1\bin\Debug\EstoqueCliente1.pdb
+C:\Users\Henrique\source\repos\EstoqueService\EstoqueCliente1\bin\Debug\EntityFramework.dll
+C:\Users\Henrique\source\repos\EstoqueService\EstoqueCliente1\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Henrique\source\repos\EstoqueService\EstoqueCliente1\bin\Debug\EntityFramework.xml
+C:\Users\Henrique\source\repos\EstoqueService\EstoqueCliente1\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Henrique\source\repos\EstoqueService\EstoqueCliente1\obj\Debug\EstoqueCliente1.csprojAssemblyReference.cache
+C:\Users\Henrique\source\repos\EstoqueService\EstoqueCliente1\obj\Debug\EstoqueCliente1.csproj.CoreCompileInputs.cache
+C:\Users\Henrique\source\repos\EstoqueService\EstoqueCliente1\obj\Debug\EstoqueCliente1.csproj.CopyComplete
+C:\Users\Henrique\source\repos\EstoqueService\EstoqueCliente1\obj\Debug\EstoqueCliente1.exe
+C:\Users\Henrique\source\repos\EstoqueService\EstoqueCliente1\obj\Debug\EstoqueCliente1.pdb

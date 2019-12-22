@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:tns="http://tempuri.org/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import namespace="http://tempuri.org/" />
+      <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/Estoques" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IEstoqueService_ListarProdutosEstoque_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListarProdutosEstoque" />
+  </wsdl:message>
+  <wsdl:message name="IEstoqueService_ListarProdutosEstoque_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListarProdutosEstoqueResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEstoqueService_IncluirProdutoEstoque_InputMessage">
+    <wsdl:part name="parameters" element="tns:IncluirProdutoEstoque" />
+  </wsdl:message>
+  <wsdl:message name="IEstoqueService_IncluirProdutoEstoque_OutputMessage">
+    <wsdl:part name="parameters" element="tns:IncluirProdutoEstoqueResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEstoqueService_RemoverProdutoEstoque_InputMessage">
+    <wsdl:part name="parameters" element="tns:RemoverProdutoEstoque" />
+  </wsdl:message>
+  <wsdl:message name="IEstoqueService_RemoverProdutoEstoque_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RemoverProdutoEstoqueResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEstoqueService_ConsultarEstoque_InputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarEstoque" />
+  </wsdl:message>
+  <wsdl:message name="IEstoqueService_ConsultarEstoque_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarEstoqueResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEstoqueService_AdicionarQtdeProdutoEstoque_InputMessage">
+    <wsdl:part name="parameters" element="tns:AdicionarQtdeProdutoEstoque" />
+  </wsdl:message>
+  <wsdl:message name="IEstoqueService_AdicionarQtdeProdutoEstoque_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AdicionarQtdeProdutoEstoqueResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEstoqueService_RemoverQtdeProdutoEstoque_InputMessage">
+    <wsdl:part name="parameters" element="tns:RemoverQtdeProdutoEstoque" />
+  </wsdl:message>
+  <wsdl:message name="IEstoqueService_RemoverQtdeProdutoEstoque_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RemoverQtdeProdutoEstoqueResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEstoqueService_VerProdutoEstoque_InputMessage">
+    <wsdl:part name="parameters" element="tns:VerProdutoEstoque" />
+  </wsdl:message>
+  <wsdl:message name="IEstoqueService_VerProdutoEstoque_OutputMessage">
+    <wsdl:part name="parameters" element="tns:VerProdutoEstoqueResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IEstoqueService">
+    <wsdl:operation name="ListarProdutosEstoque">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEstoqueService/ListarProdutosEstoque" message="tns:IEstoqueService_ListarProdutosEstoque_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEstoqueService/ListarProdutosEstoqueResponse" message="tns:IEstoqueService_ListarProdutosEstoque_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="IncluirProdutoEstoque">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEstoqueService/IncluirProdutoEstoque" message="tns:IEstoqueService_IncluirProdutoEstoque_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEstoqueService/IncluirProdutoEstoqueResponse" message="tns:IEstoqueService_IncluirProdutoEstoque_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RemoverProdutoEstoque">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEstoqueService/RemoverProdutoEstoque" message="tns:IEstoqueService_RemoverProdutoEstoque_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEstoqueService/RemoverProdutoEstoqueResponse" message="tns:IEstoqueService_RemoverProdutoEstoque_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarEstoque">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEstoqueService/ConsultarEstoque" message="tns:IEstoqueService_ConsultarEstoque_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEstoqueService/ConsultarEstoqueResponse" message="tns:IEstoqueService_ConsultarEstoque_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AdicionarQtdeProdutoEstoque">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEstoqueService/AdicionarQtdeProdutoEstoque" message="tns:IEstoqueService_AdicionarQtdeProdutoEstoque_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEstoqueService/AdicionarQtdeProdutoEstoqueResponse" message="tns:IEstoqueService_AdicionarQtdeProdutoEstoque_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RemoverQtdeProdutoEstoque">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEstoqueService/RemoverQtdeProdutoEstoque" message="tns:IEstoqueService_RemoverQtdeProdutoEstoque_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEstoqueService/RemoverQtdeProdutoEstoqueResponse" message="tns:IEstoqueService_RemoverQtdeProdutoEstoque_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="VerProdutoEstoque">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEstoqueService/VerProdutoEstoque" message="tns:IEstoqueService_VerProdutoEstoque_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEstoqueService/VerProdutoEstoqueResponse" message="tns:IEstoqueService_VerProdutoEstoque_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="DefaultBinding_IEstoqueService" type="tns:IEstoqueService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ListarProdutosEstoque">
+      <soap:operation soapAction="http://tempuri.org/IEstoqueService/ListarProdutosEstoque" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IncluirProdutoEstoque">
+      <soap:operation soapAction="http://tempuri.org/IEstoqueService/IncluirProdutoEstoque" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RemoverProdutoEstoque">
+      <soap:operation soapAction="http://tempuri.org/IEstoqueService/RemoverProdutoEstoque" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarEstoque">
+      <soap:operation soapAction="http://tempuri.org/IEstoqueService/ConsultarEstoque" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AdicionarQtdeProdutoEstoque">
+      <soap:operation soapAction="http://tempuri.org/IEstoqueService/AdicionarQtdeProdutoEstoque" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RemoverQtdeProdutoEstoque">
+      <soap:operation soapAction="http://tempuri.org/IEstoqueService/RemoverQtdeProdutoEstoque" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VerProdutoEstoque">
+      <soap:operation soapAction="http://tempuri.org/IEstoqueService/VerProdutoEstoque" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+</wsdl:definitions>

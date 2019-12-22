@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://projetoavaliativo.dm113/01" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://projetoavaliativo.dm113/01" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://projetoavaliativo.dm113/01/Imports">
+      <xsd:import schemaLocation="http://localhost:56252/EstoqueService.svc?xsd=xsd0" namespace="http://projetoavaliativo.dm113/01" />
+      <xsd:import schemaLocation="http://localhost:56252/EstoqueService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:56252/EstoqueService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Estoques" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IEstoqueService_ListarProdutosEstoque_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListarProdutosEstoque" />
+  </wsdl:message>
+  <wsdl:message name="IEstoqueService_ListarProdutosEstoque_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListarProdutosEstoqueResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEstoqueService_IncluirProdutoEstoque_InputMessage">
+    <wsdl:part name="parameters" element="tns:IncluirProdutoEstoque" />
+  </wsdl:message>
+  <wsdl:message name="IEstoqueService_IncluirProdutoEstoque_OutputMessage">
+    <wsdl:part name="parameters" element="tns:IncluirProdutoEstoqueResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEstoqueService_RemoverProdutoEstoque_InputMessage">
+    <wsdl:part name="parameters" element="tns:RemoverProdutoEstoque" />
+  </wsdl:message>
+  <wsdl:message name="IEstoqueService_RemoverProdutoEstoque_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RemoverProdutoEstoqueResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEstoqueService_ConsultarEstoque_InputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarEstoque" />
+  </wsdl:message>
+  <wsdl:message name="IEstoqueService_ConsultarEstoque_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarEstoqueResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEstoqueService_AdicionarQtdeProdutoEstoque_InputMessage">
+    <wsdl:part name="parameters" element="tns:AdicionarQtdeProdutoEstoque" />
+  </wsdl:message>
+  <wsdl:message name="IEstoqueService_AdicionarQtdeProdutoEstoque_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AdicionarQtdeProdutoEstoqueResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEstoqueService_RemoverQtdeProdutoEstoque_InputMessage">
+    <wsdl:part name="parameters" element="tns:RemoverQtdeProdutoEstoque" />
+  </wsdl:message>
+  <wsdl:message name="IEstoqueService_RemoverQtdeProdutoEstoque_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RemoverQtdeProdutoEstoqueResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEstoqueService_VerProdutoEstoque_InputMessage">
+    <wsdl:part name="parameters" element="tns:VerProdutoEstoque" />
+  </wsdl:message>
+  <wsdl:message name="IEstoqueService_VerProdutoEstoque_OutputMessage">
+    <wsdl:part name="parameters" element="tns:VerProdutoEstoqueResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IEstoqueService">
+    <wsdl:operation name="ListarProdutosEstoque">
+      <wsdl:input wsaw:Action="http://projetoavaliativo.dm113/01/IEstoqueService/ListarProdutosEstoque" message="tns:IEstoqueService_ListarProdutosEstoque_InputMessage" />
+      <wsdl:output wsaw:Action="http://projetoavaliativo.dm113/01/IEstoqueService/ListarProdutosEstoqueResponse" message="tns:IEstoqueService_ListarProdutosEstoque_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="IncluirProdutoEstoque">
+      <wsdl:input wsaw:Action="http://projetoavaliativo.dm113/01/IEstoqueService/IncluirProdutoEstoque" message="tns:IEstoqueService_IncluirProdutoEstoque_InputMessage" />
+      <wsdl:output wsaw:Action="http://projetoavaliativo.dm113/01/IEstoqueService/IncluirProdutoEstoqueResponse" message="tns:IEstoqueService_IncluirProdutoEstoque_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RemoverProdutoEstoque">
+      <wsdl:input wsaw:Action="http://projetoavaliativo.dm113/01/IEstoqueService/RemoverProdutoEstoque" message="tns:IEstoqueService_RemoverProdutoEstoque_InputMessage" />
+      <wsdl:output wsaw:Action="http://projetoavaliativo.dm113/01/IEstoqueService/RemoverProdutoEstoqueResponse" message="tns:IEstoqueService_RemoverProdutoEstoque_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarEstoque">
+      <wsdl:input wsaw:Action="http://projetoavaliativo.dm113/01/IEstoqueService/ConsultarEstoque" message="tns:IEstoqueService_ConsultarEstoque_InputMessage" />
+      <wsdl:output wsaw:Action="http://projetoavaliativo.dm113/01/IEstoqueService/ConsultarEstoqueResponse" message="tns:IEstoqueService_ConsultarEstoque_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AdicionarQtdeProdutoEstoque">
+      <wsdl:input wsaw:Action="http://projetoavaliativo.dm113/01/IEstoqueService/AdicionarQtdeProdutoEstoque" message="tns:IEstoqueService_AdicionarQtdeProdutoEstoque_InputMessage" />
+      <wsdl:output wsaw:Action="http://projetoavaliativo.dm113/01/IEstoqueService/AdicionarQtdeProdutoEstoqueResponse" message="tns:IEstoqueService_AdicionarQtdeProdutoEstoque_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RemoverQtdeProdutoEstoque">
+      <wsdl:input wsaw:Action="http://projetoavaliativo.dm113/01/IEstoqueService/RemoverQtdeProdutoEstoque" message="tns:IEstoqueService_RemoverQtdeProdutoEstoque_InputMessage" />
+      <wsdl:output wsaw:Action="http://projetoavaliativo.dm113/01/IEstoqueService/RemoverQtdeProdutoEstoqueResponse" message="tns:IEstoqueService_RemoverQtdeProdutoEstoque_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="VerProdutoEstoque">
+      <wsdl:input wsaw:Action="http://projetoavaliativo.dm113/01/IEstoqueService/VerProdutoEstoque" message="tns:IEstoqueService_VerProdutoEstoque_InputMessage" />
+      <wsdl:output wsaw:Action="http://projetoavaliativo.dm113/01/IEstoqueService/VerProdutoEstoqueResponse" message="tns:IEstoqueService_VerProdutoEstoque_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>
